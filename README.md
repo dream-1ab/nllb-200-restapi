@@ -11,13 +11,15 @@
 
 This api and example app uses CUDA if available by default.
 there was a wrapper class around huggingface official api named ```my_translator.py``` so you can easly integrate it into your own projects.
+ 
 
 ## How to use it?
 it is very simple to use, by default this uses CUDA for the computation backend if available otherwise uses CPU.
+* (OPTIONAL) Create a virtual environment with anaconda or venv (venc forexample: ```python3 -m venv ./venv``` and activate the virtual environment with ```source ./venv/bin/activate``` for Linux/macOS and ```. ./venv/bin/Activate.ps1```)
 * install the necessary python packages through `pip3 install -r ./requirements.txt`
 * (OPTIONAL) all the translation model downloads from huggingface during program startup if the model is not available locally but the model download fails if you cannot connect to huggingface with your network environment, to avoid this situation you can use third-party huggingface mirror, e.g. use [hf-mirror.com]() through:
   * Bash/Zsh (default by Linux/Mac): ```export HF_ENDPOINT=https://hf-mirror.com```
-  * PowerShell (default by Windows): ```$env:HF_ENDPOINT = "https://hf-mirror.com"```
+  * PowerShell (default by Windows): ```$env:HF_ENDPOINT = "https://hf-mirror.com"``` (Warning, DON'T USE CMD, USE Powershell or WindowsTerminal with powershell shell engine)
 and for more information: [https://hf-mirror.com/](), [huggingface.co]()
 * start the app with ```python3 ./translator_app.py``` or rest api with ```python3 ./translator_api.py```
 
