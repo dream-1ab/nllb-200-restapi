@@ -38,8 +38,8 @@ class Translator:
         model_name = self.model_name
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(self.device)
     def set_direction(self, source: Language, destination: Language):
-        self.source_tokenizer = AutoTokenizer.from_pretrained(self.model_name, src_lang=source)
-        self.destination_tokenizer = AutoTokenizer.from_pretrained(self.model_name, src_lang=destination)
+        self.source_tokenizer = AutoTokenizer.from_pretrained(self.model_name, src_lang=source, tgt_lang=destination)
+        self.destination_tokenizer = AutoTokenizer.from_pretrained(self.model_name, src_lang=destination, tgt_lang=source)
         self.source_language = source
         self.destination_language = destination
     def swap_direction(self):
@@ -54,6 +54,6 @@ class Translator:
     def translate(self, text: str) -> str:
         source_tokenizer = self.source_tokenizer
         token_of_input = source_tokenizer(text=text, return_tensors="pt").to(self.device)
-        translated_token = self.model.generate(**token_of_input, max_length=3000, forced_bos_token_id=self.source_tokenizer.added_tokens_encoder[self.destination_language]).to(self.device)
+        translated_token = self.model.generate(**token_of_input, max_length=3000, forced_bos_token_id=self.destination_tokenizer.added_tokens_encoder[self.destination_language]).to(self.device)
         translated_text = source_tokenizer.batch_decode(translated_token, skip_special_tokens=True)[0]
         return translated_text
