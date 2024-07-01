@@ -1,0 +1,11 @@
+text,Source language,Target language,output,flag,username,timestamp
+"你好,很高兴见到你.",zho_Hans,uig_Arab,ياخشىمۇسەن، كۆرۈشكەنلىكىمگە خۇشالمەن.,,,2024-06-26 05:40:16.830783
+"Enumerations in Python are implemented by using the module named “enum“. Enumerations are created using classes. Enums have names and values associated with them. Let’s cover the different concepts of Python Enum in this article.
+
+",eng_Latn,uig_Arab,Pythonدا تىزىملىك قىلىش enum دېگەن بىر ماگۇل ئارقىلىق يولغا قويۇلىدۇ. تىزىملىك قىلىش سىنىپ ئارقىلىق ياسىلىدۇ. تىزىملىك قىلىشلار بىلەن ئىسىم ۋە قىممەتلەر مۇناسىۋەتلىك. بۇ ماقالىدە Python Enum نىڭ ھەرخىل ئۇقۇملىرىنى ئۆز ئىچىگە ئالايلى. ,,,2024-06-26 05:51:51.840223
+كىتاب ئوقۇياي دىسەم ئۆي بەك قاراڭغۇ، ئېنىق كۆرەلمىدىم,uig_Arab,zho_Hans,"我说我要读书,房间太黑暗了,我看不清.",,,2024-06-26 06:09:20.072517
+كىتاب ئوقۇياي دىسەم ئۆي بەك قاراڭغۇ، ئېنىق كۆرەلمىدىم,uig_Arab,zho_Hans,"如果我读书,房间太黑暗了,我看不清楚.",,,2024-06-26 06:09:36.305573
+ماڭا ياردەم قىلىپ چىراقنى ياندۇرۋېتەمسىز؟,uig_Arab,zho_Hans,你能帮我点灯吗?,,,2024-06-26 06:11:49.863095
+مېنىڭ ئىسمىم مۇختەر، سىزنىڭچۇ؟,uig_Arab,zho_Hans,"我的名字是"""",你怎么说?",,,2024-06-26 06:13:27.909554
+مېنىڭ ئىسمىم مۇختەر، سىزنىڭچۇ؟,uig_Arab,zho_Hans,"我叫穆克塔尔,你叫什么?",,,2024-06-26 06:13:52.050323
+That was also my first question as I found this article. But using the code above with the ‘cache_dir’ argument is all you need to do.,lus_Latn,uig_Arab,بۇ ماقالىنى تاپقاندا بۇ مېنىڭ تۇنجى سورايدىغىنىم. لېكىن يۇقارقى كودنى cache_dir ئارگۇمەنتى بىلەن قوشۇپ ئىشلەتسىڭىزلا بۇلىدۇ.,,,2024-06-26 12:22:17.474674
